@@ -8,7 +8,7 @@ module.exports = function() {
     router.post('/movie',movieController.newMovie);
 
 
-//     router.get('/', (req, res) => {
+//     router.get('/', (req, res ) => {
 //     res.send('inicio');
 //   });
 //   router.get('/nosotros', (req, res) => {
