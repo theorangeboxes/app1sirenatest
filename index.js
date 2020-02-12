@@ -3,7 +3,7 @@ const routes = require('./routes');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-// require('dotenv').config({path: 'variables.env'});
+require('dotenv').config({path: 'variables.env'});
 
 // //por ultimo se importa CORS, permite que un cliente se conecte.
 // const cors = require('cors');
@@ -13,8 +13,8 @@ mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb://localhost/restapi', {useNewUrlParser:true});
 
 mongoose
-  .connect('mongodb://localhost/sirenaAPP1DB', {
-    //.connect(process.env.DB_URL, {
+  //.connect('mongodb://localhost/sirenaAPP1DB', {
+    .connect(process.env.DB_URLP, {
   //.connect('mongodb+srv://root2:play123@cluster0-kfrsq.mongodb.net/test?retryWrites=true&w=majority', {
     useUnifiedTopology: true,
     useNewUrlParser: true
