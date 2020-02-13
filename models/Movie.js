@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+/**
+ * Create and export Schema of a Movie
+ */
 const movieSchema = new Schema({
     title: {
         type : String,

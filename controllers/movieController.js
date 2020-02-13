@@ -1,5 +1,10 @@
 const Movie = require('../models/Movie');
 
+/**
+ * Create a new movie
+ * @async
+ * @method
+ */
 exports.newMovie = async (req, res, next) => {
   const movie = new Movie(req.body);
 
@@ -18,6 +23,12 @@ exports.newMovie = async (req, res, next) => {
   }
 };
 
+/**
+ * Get all movies
+ * @async
+ * @method
+ *
+ */
 exports.obtainMovies = async (req, res, next) => {
   try {
     const movies = await Movie.find({});
@@ -29,6 +40,12 @@ exports.obtainMovies = async (req, res, next) => {
   }
 };
 
+/**
+ * Get all movies
+ * @async
+ * @method
+ *
+ */
 exports.obtainMovie = async (req, res, next) => {
   try {
     const { idMovie } = req.params;
@@ -48,6 +65,12 @@ exports.obtainMovie = async (req, res, next) => {
   }
 };
 
+/**
+ * Update a movies by id
+ * @async
+ * @method
+ *
+ */
 exports.updateMovie = async (req, res, next) => {
   try {
     let movie = await Movie.findOneAndUpdate(
@@ -67,6 +90,11 @@ exports.updateMovie = async (req, res, next) => {
   }
 };
 
+/**
+ * Delete a movies by id
+ * @async
+ * @method
+ */
 exports.deleteMovie = async (req, res, next) => {
   try {
     await Movie.findOneAndDelete({ _id: req.params.idMovie });

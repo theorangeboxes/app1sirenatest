@@ -15,6 +15,7 @@
     "mongoose": "^5.8.11"
   },
   "devDependencies": {
+    "jsdoc": "^3.6.3",
     "nodemon": "^2.0.2"
   }
 }
