@@ -16,10 +16,17 @@ El repositorio esta coenctado a una app desplegada en HEROKU, por ello todo camb
 HEROKU: https://app1sirenatest.herokuapp.com/
 MONGODB Atlas: sirenaAPP1DB 
 
-## SERVERLESS
+## LOCAL
 
 Clonar o descargar el repositorio. 
 
-Para que funcione de forma correcta se debe proporcionar la URI para acceder a la MongoDB local, o se puede trabajar con la MongoDB serverless.
+Crear en RAIZ archivo "variables.env" con la entrada DB_URLP:
 
+Mongo DB local:
 
+DB_URLP=mongodb://localhost/sirenaAPP1DB
+
+Cluster en la nube utilizar el string de conexion:
+
+DB_URLP=mongodb+srv://sirena:ZwEZulmpGFU9tbaE@sirenaapp1db-qdv2e.mongodb.net/test?retryWrites=true&w=majority
+HOST=localhost
