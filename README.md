@@ -1,84 +1,12 @@
-# app1sirenatest
+# App1 Sirena Test
 
-Repositorio para app1 test  de Sirena!!!
+Hola!! , esta es la documentacion para poder empezar a probar la aplicacion 1 del test. Para realizar el mismo use NodeJS, Express.JS (server), Axios para los request, Mongoose para conexión con el schema y la DB, JS en general (ECMAScript 6)
 
 ## Comencemos
 
-El repositorio trabaja con integracion continua sobre una app desplegada en HEROKU, por ello todo cambio genera un rebuild.
-Para ejecutarlo localmente, se puede realizar con NPM START.
+Serverless
 
+El repositorio esta coenctado a una app desplegada en HEROKU, por ello todo cambio genera un rebuild. A su vez la APP, esta coenctada contra un cluster Mongo DB creado en Mongo DB Atlas. Ambas sobre cuentas propias.
 
-### Instalación / Ejecución
-
-LOCAL: Luego de tener el proyecto alojado localmente, se debe ejecutar el comendo "npm start". 
-
-Se debe agregar el archivo "variables.env" en la raiz del proyecto.  proyecto cuenta con un archivo .env que contiene las configuraciones de endpoint, y de DB.
-
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+HEROKU: https://app1sirenatest.herokuapp.com/
+MONGODB Atlas: sirenaAPP1DB 
