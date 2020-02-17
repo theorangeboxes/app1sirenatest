@@ -22,11 +22,17 @@ Clonar o descargar el repositorio.
 
 Crear en RAIZ archivo "variables.env" con la entrada DB_URLP:
 
-Mongo DB local:
-
+Mongo DB local ejemplo: 
 DB_URLP=mongodb://localhost/sirenaAPP1DB
 
-Cluster en la nube utilizar el string de conexion:
-
+Cluster en la nube utilizar el string de conexion: 
 DB_URLP=mongodb+srv://sirena:ZwEZulmpGFU9tbaE@sirenaapp1db-qdv2e.mongodb.net/test?retryWrites=true&w=majority
 HOST=localhost
+
+
+NOTAS:
+> No instalé CORs para que se pueda probar loibremente por medio de postman.
+> La api no tiene midlleware de autorización, normalmente uso JWT para seguridad, lo podria agregar facilmente.
+>utilice async/awaite para trabajar promesas, me es mas claro el codigo de esta forma pero se podria trabajar tranquilamente con promesas.
+>la cuenta HEROKIU es gratuita y por ende entra en modo sleep cada una hora aproximadamente, simplemente se puede intentar consumir un metodo para despertarla:
+https://app1sirenatest.herokuapp.com/movies
