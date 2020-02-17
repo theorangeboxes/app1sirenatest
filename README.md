@@ -33,6 +33,6 @@ HOST=localhost
 NOTAS:
 > No instalé CORs para que se pueda probar loibremente por medio de postman.
 > La api no tiene midlleware de autorización, normalmente uso JWT para seguridad, lo podria agregar facilmente.
->utilice async/awaite para trabajar promesas, me es mas claro el codigo de esta forma pero se podria trabajar tranquilamente con promesas.
+>utilice async/await para trabajar promesas, me es mas claro el codigo de esta forma pero se podria trabajar tranquilamente con promesas.
 >la cuenta HEROKIU es gratuita y por ende entra en modo sleep cada una hora aproximadamente, simplemente se puede intentar consumir un metodo para despertarla:
 https://app1sirenatest.herokuapp.com/movies
